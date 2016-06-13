@@ -23,17 +23,6 @@ Kundenspezifischen Einstellungen
 }
 
 
-.login #container h2{
-	background: url('logo.svg'); 
-	background-repeat: no-repeat; 
-	background-position: left center;
-	background-size:  auto 90%;
-	height: 70px;
-	padding-left: 135px;
-    padding-top: 25px;
-    color: #333;
-}
-
 
 /*******************************************************************************
 ENDE der kundenspezifischen Einstellungen
