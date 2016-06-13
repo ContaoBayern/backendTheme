@@ -1,0 +1,89 @@
+/*******************************************************************************
+Dieses Stylesheet wird im Template be_main.html5 eingebunden 
+und stylt das Backend
+*******************************************************************************/
+
+
+/*******************************************************************************
+Kundenspezifischen Einstellungen
+*******************************************************************************/
+
+#header h1, #tl_navigation h1, h1.main_headline {
+
+    background: #666666;
+    background: linear-gradient(to bottom, #666666 1%,#999999 100%);
+}
+
+#tmenu {
+	background: url(logo.svg); 
+	background-repeat: no-repeat; 
+	background-position: 10px center;
+	background-size:  auto 90%;
+	height: 70px;
+}
+
+
+.login #container h2{
+	background: url('logo.svg'); 
+	background-repeat: no-repeat; 
+	background-position: left center;
+	background-size:  auto 90%;
+	height: 70px;
+	padding-left: 135px;
+    padding-top: 25px;
+    color: #333;
+}
+
+
+/*******************************************************************************
+ENDE der kundenspezifischen Einstellungen
+*******************************************************************************/
+
+body {max-width: 1200px; margin: auto; background: rgba(207,181,59, .1); line-height: 1.75; }
+body * {box-sizing: border-box; font-size: 12px;font-family: 'Ubuntu', sans-serif;}
+
+a, body, div, label, legend, li, ol, p, td, th, ul, fieldset, form, input, optgroup, select, textarea,
+.chzn-container-single .chzn-single > span
+{font-size: 12px;}
+
+.chzn-container-single .chzn-single {height: auto;}
+
+#header, #container, #left, #main, #footer, .tl_textarea, .tl_listing, .tl_header, .tl_content, .cte_type,
+.tl_content.indent 	{width: 100%;}
+
+.tl_help, .tl_help a, .cte_type.published, .cte_type.published a {font-size: .86rem;}
+
+.tl_tip {height: 1.4em;}
+
+.tl_checkbox {
+    margin: auto;
+    vertical-align: middle;
+}
+
+.w50 {height: auto;}
+
+.tl_box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tl_box > div {width: 100%;}
+
+select.tl_select, select.tl_select_column, select.tl_select_unit, select.tl_select_interval {
+    height: auto;
+    padding: 0.25em;
+}
+
+.tl_header_table {line-height: 1.25;}
+
+
+@media (min-width: 768px) {
+
+	body *,	a, body, div, label, legend, li, ol, p, td, th, ul, fieldset, form, 
+	input,optgroup, select, textarea, .chzn-container-single .chzn-single > span
+	{font-size: 14px;}
+	
+	#left {width: 25%;}
+	#main {width: calc(75% - 10px);}
+	
+}
