@@ -35,10 +35,22 @@ a, body, div, label, legend, li, ol, p, td, th, ul, fieldset, form, input, optgr
 .chzn-container-single .chzn-single > span
 {font-size: 12px;}
 
-.chzn-container-single .chzn-single {height: auto;}
+body *, a, body, div, label, legend, li, ol, p, td, th, ul, fieldset, form, 
+input, optgroup, select, textarea, .chzn-container-single .chzn-single > span, 
+.fieldset.tl_checkbox_container 
+{line-height: inherit!important;}
 
-#header, #container, #left, #main, #footer, .tl_textarea, .tl_listing, .tl_header, .tl_content, .cte_type,
-.tl_content.indent 	{width: 100%;}
+.chzn-container-single .chzn-single {height: auto;}
+#header, #container, #footer, .tl_textarea, .tl_listing, .tl_header, .tl_content, .cte_type,
+.tl_content.indent 
+
+	{width: 100%;}
+#left {width: 25%;}
+#main {width: calc(75% - 10px);}
+
+.float_right {float: right;}
+
+.float_left {float: left;}
 
 .tl_help, .tl_help a, .cte_type.published, .cte_type.published a {font-size: .86rem;}
 
@@ -49,30 +61,34 @@ a, body, div, label, legend, li, ol, p, td, th, ul, fieldset, form, input, optgr
     vertical-align: middle;
 }
 
-.w50 {height: auto;}
-
-.tl_box {
+.tl_box, .tl_tbox {
     display: flex;
     flex-wrap: wrap;
 }
 
+
+.tl_box .tl_select, .tl_tbox .tl_select, .tl_box .tl_mselect, .tl_tbox .tl_mselect {
+    width: auto;
+}
+
 .tl_box > div {width: 100%;}
+.w50, fieldset .w50 {
+height: auto;
+width: 47%;}
+div.w50:nth-of-type(odd){margin-right: 3%;}
 
 select.tl_select, select.tl_select_column, select.tl_select_unit, select.tl_select_interval {
     height: auto;
     padding: 0.25em;
 }
-
 .tl_header_table {line-height: 1.25;}
 
 
 @media (min-width: 768px) {
 
 	body *,	a, body, div, label, legend, li, ol, p, td, th, ul, fieldset, form, 
-	input,optgroup, select, textarea, .chzn-container-single .chzn-single > span
+	input, optgroup, select, textarea, .chzn-container-single .chzn-single > span
 	{font-size: 14px;}
-	
-	#left {width: 25%;}
-	#main {width: calc(75% - 10px);}
+
 	
 }
