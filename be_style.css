@@ -28,7 +28,7 @@ Kundenspezifischen Einstellungen
 ENDE der kundenspezifischen Einstellungen
 *******************************************************************************/
 
-body {max-width: 1200px; margin: auto; background: rgba(207,181,59, .1); line-height: 1.75; }
+body {max-width: 1200px; margin: auto; background: rgba(207,181,59, .1);}
 body * {box-sizing: border-box; font-size: 12px;font-family: 'Ubuntu', sans-serif;}
 
 a, body, div, label, legend, li, ol, p, td, th, ul, fieldset, form, input, optgroup, select, textarea,
@@ -38,7 +38,9 @@ a, body, div, label, legend, li, ol, p, td, th, ul, fieldset, form, input, optgr
 body *, a, body, div, label, legend, li, ol, p, td, th, ul, fieldset, form, 
 input, optgroup, select, textarea, .chzn-container-single .chzn-single > span, 
 .fieldset.tl_checkbox_container 
-{line-height: inherit!important;}
+{line-height: 1.5!important;}
+
+.tl_formbody_edit .tl_tbox {line-height: 1!important;}
 
 .chzn-container-single .chzn-single {height: auto;}
 #header, #container, #footer, .tl_textarea, .tl_listing, .tl_header, .tl_content, .cte_type,
@@ -66,23 +68,25 @@ input, optgroup, select, textarea, .chzn-container-single .chzn-single > span,
     flex-wrap: wrap;
 }
 
-
-.tl_box .tl_select, .tl_tbox .tl_select, .tl_box .tl_mselect, .tl_tbox .tl_mselect {
-    width: auto;
-}
-
-.tl_box > div {width: 100%;}
+.tl_box > div, fieldset > div {width: 100%;}
 .w50, fieldset .w50 {
 height: auto;
 width: 47%;}
 div.w50:nth-of-type(odd){margin-right: 3%;}
 
+.tl_box .tl_select, .tl_tbox .tl_select, .tl_box .tl_mselect, .tl_tbox .tl_mselect,
 select.tl_select, select.tl_select_column, select.tl_select_unit, select.tl_select_interval {
     height: auto;
     padding: 0.25em;
+     width: auto;
+     min-width: 3rem;
 }
 .tl_header_table {line-height: 1.25;}
 
+.tl_text_2 {width: 47%;}
+.tl_text {width: 98%;}
+
+.ace_editor {min-height: 3rem;}
 
 @media (min-width: 768px) {
 
@@ -90,5 +94,6 @@ select.tl_select, select.tl_select_column, select.tl_select_unit, select.tl_sele
 	input, optgroup, select, textarea, .chzn-container-single .chzn-single > span
 	{font-size: 14px;}
 
-	
+	#left {width: 25%;}
+	#main {width: calc(75% - 10px);}
 }
